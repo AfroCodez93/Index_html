@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Programming language survey</title>
+    </head>
+
+    <body>
+        <h1>Favorite programming language</h1>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add user</legend>
+
+                <div>
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email_address">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status" name="user_status_name">
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+
+        <p>Choose your favorite programming language:</p>
+        <form>
+        <div>
+            <input type="radio" id="html" name="language" value="html">
+            <label for="html">HTML</label>
+        </div>
+
+        <div>
+            <input type="radio" id="css" name="language" value="css">
+            <label for="css">CSS</label>
+        </div>
+
+        <div>
+            <input type="radio" id="javascript" name="language" value="javascript">
+            <label for="javascript">Javascript</label>
+        </div>
+
+        <div>
+            <label for="comments">Leave a comment...</label>
+            <textarea id="comment" name="comment" row="5" cols="33"></textarea>
+        </div>
+
+        <div>
+            <label for="date">Current Date:</label>
+            <input type="date" id="date" name="current_date">
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+            <label for="subscribeNews">Sign up for newsletter</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="agreement" name="terms" value="agreement">
+            <label for="agreement">Agree to terms and conditions</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+
+
+    </body>
+</html>
